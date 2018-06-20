@@ -1,4 +1,4 @@
-baseURL = "https://tshohe.github.io/"
+baseURL = "https://tshohe.github.io"
 languageCode = "jp-ja"
 title = "tshohe's website tsts"
 theme = "hugo-creative-theme"
