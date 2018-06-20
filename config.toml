@@ -40,7 +40,7 @@ googleAnalytics = ""
         [[params.services.list]]
             icon = "fa-cloud"
             title = "Memorizer"
-            description = "Web Application to enhance memory. [Go to this service](//memorizer/lp.html)"
+            description = "Web Application to enhance memory. [Go to this service](/memorizer/lp.html)"
 
 #        [[params.services.list]]
 #            icon = "fa-diamond"
