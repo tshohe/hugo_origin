@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.8
+    steps:
+      - checkout
+      - run:
+          command: date
+      - hugo
+
+#  deploy:
+#machine:
+#    working_directory: ~/public
+#    docker:
+#      - image: circleci/golang:1.8
+#    steps:
+#      - run:
+#           command: git add .
+#      - run:
+#           command: git commit -m "publish"
+#      - run:
+#           command: git push origin master
+
+workflows:
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
+#      - deploy:
+#          filters:
+#            branches:
+#              only: master
+#          requires:
+#            - build
