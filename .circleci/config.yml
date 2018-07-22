@@ -1,6 +1,6 @@
 defaults: &defaults
   docker:
-      - image: jojomi/hugo:latest
+      - image: felicianotech/docker-hugo:0.22.1
 
 version: 2
 jobs:
@@ -9,8 +9,6 @@ jobs:
     working_directory: ~/hugo
     steps:
       - checkout
-      - run: 
-           command: ls
       - run:
           command: hugo
       - save_cache:
@@ -25,13 +23,10 @@ jobs:
       - restore_cache:
           key: hugo-cache
       - run:
-           command: ls
-      - run:
-           command: git add .
-      - run:
-           command: git commit -m "publish"
-      - run:
-           command: git push origin master
+           command: | 
+             git add .
+             git commit -m "publish"
+             git push origin master
 
 workflows:
   version: 2
