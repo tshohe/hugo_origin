@@ -1,8 +1,10 @@
+defaults: 
+  docker:
+      - image: bepsays/ci-goreleaser:0.34.2-11
+
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/golang:1.8
     steps:
       - checkout
       - run:
@@ -12,8 +14,6 @@ jobs:
 
   deploy:
     working_directory: ~/public
-    docker:
-      - image: circleci/golang:1.8
     steps:
       - run:
            command: git add .
