@@ -1,6 +1,6 @@
 defaults: &defaults
   docker:
-      - image: cibuilds/hugo:0.28
+      - image: cibuilds/hugo:latest
 
 version: 2
 jobs:
