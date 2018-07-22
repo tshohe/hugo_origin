@@ -10,18 +10,17 @@ jobs:
       - run:
           command: hugo
 
-#  deploy:
-#machine:
-#    working_directory: ~/public
-#    docker:
-#      - image: circleci/golang:1.8
-#    steps:
-#      - run:
-#           command: git add .
-#      - run:
-#           command: git commit -m "publish"
-#      - run:
-#           command: git push origin master
+  deploy:
+    working_directory: ~/public
+    docker:
+      - image: circleci/golang:1.8
+    steps:
+      - run:
+           command: git add .
+      - run:
+           command: git commit -m "publish"
+      - run:
+           command: git push origin master
 
 workflows:
   version: 2
@@ -31,9 +30,9 @@ workflows:
           filters:
             branches:
               only: master
-#      - deploy:
-#          filters:
-#            branches:
-#              only: master
-#          requires:
-#            - build
+      - deploy:
+          filters:
+            branches:
+              only: master
+          requires:
+            - build
