@@ -6,15 +6,26 @@ version: 2
 jobs:
   build:
     <<: *defaults
+    working_directory: ~/hugo
     steps:
       - checkout
+      - run: 
+           command: ls
       - run:
-          command: cd hugo_origin && hugo
+          command: hugo
+      - save_cache:
+          key: hugo-cache
+          paths:
+            - ~/hugo
 
   deploy:
     <<: *defaults
-    working_directory: ~/hugo_origin/public
+    working_directory: ~/hugo/public
     steps:
+      - restore_cache:
+          key: hugo-cache
+      - run:
+           command: ls
       - run:
            command: git add .
       - run:
