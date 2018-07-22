@@ -1,6 +1,6 @@
 defaults: &defaults
   docker:
-      - image: bepsays/ci-goreleaser:0.34.2-11
+      - image: jojomi/hugo:latest
 
 version: 2
 jobs:
