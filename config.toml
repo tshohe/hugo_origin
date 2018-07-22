@@ -23,7 +23,7 @@ googleAnalytics = ""
 	# Hero section
 	[params.hero]
 		slogan     = "T S T S"
-		subtitle   = "Introduction of Blog and Service and Portfolio."
+		subtitle   = "Introduction of blog, service and portfolio."
 		buttonText = "Find out more"
 
 
