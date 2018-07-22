@@ -9,13 +9,11 @@ jobs:
     steps:
       - checkout
       - run:
-          command: date
-      - run:
-          command: hugo
+          command: cd hugo_origin && hugo
 
   deploy:
     <<: *defaults
-    working_directory: ~/public
+    working_directory: ~/hugo_origin/public
     steps:
       - run:
            command: git add .
