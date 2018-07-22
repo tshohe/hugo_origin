@@ -10,7 +10,9 @@ jobs:
     steps:
       - checkout
       - run:
-          command: hugo
+          command: |
+            rm -rf public/*
+            hugo
       - save_cache:
           key: hugo-cache
           paths:
