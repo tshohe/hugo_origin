@@ -1,6 +1,6 @@
 defaults: &defaults
   docker:
-      - image: cibuilds/hugo:latest
+      - image: jojomi/hugo:latest
 
 version: 2
 jobs:
