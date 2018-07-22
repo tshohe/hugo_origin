@@ -1,6 +1,6 @@
 defaults: &defaults
   docker:
-      - image: felicianotech/docker-hugo:0.22.1
+      - image: cibuilds/hugo:0.28
 
 version: 2
 jobs:
