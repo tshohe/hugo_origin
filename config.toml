@@ -81,7 +81,7 @@ googleAnalytics = ""
 	# Contact section
 	[params.contact]
 		headline = "Let's Get In Touch!"
-		description = "[ja] いい仕事があったらご連絡ください。 [en] Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
+		description = "[ja] いい仕事があったらご連絡ください。 [en] Send me an email and we will get back to you as soon as possible!"
 		#phone = "123-456-6789"
 		email = "tshohe01@gmail.com"
 
