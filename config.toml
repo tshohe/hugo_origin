@@ -2,7 +2,7 @@ baseURL = "https://tsts.work"
 languageCode = "jp-ja"
 title = "tshohe's website tsts"
 theme = "hugo-creative-theme"
-googleAnalytics = ""
+googleAnalytics = "UA-122802676-1"
 
 [params]
 	name = "tshohe"
