@@ -1,0 +1,29 @@
+modalID: 3
+title: Berikoma
+date: 2016-11-5
+img: berikoma.jpg
+client: None
+clientLink: "#"
+category: Development
+description: |
+  The home assistant robot in my house.
+
+  Features:
+
+    - Controll TV using voice.
+      - or webapp
+
+      ![contoller](img/berikoma/home_controller.png)
+
+    - Move freely using HTTP request from webapp.
+    - Wakeup PC (Wake-on-LAN) (WIP)
+
+  Consist of:
+
+    - Raspberry Pi
+    - TAMIYA's parts
+    - ANKER's battery
+    - Logicool's camera
+    - Infrared sender/receiver
+
+      <video src="img/berikoma/berikoma_speak.mp4" controls width="600"></video>

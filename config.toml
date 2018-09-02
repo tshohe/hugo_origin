@@ -11,7 +11,7 @@ googleAnalytics = "UA-122802676-1"
 
 	# Navigation
 	[params.navigation]
-		brand = "tshohe's WebSite"
+		brand = "TSTS WORK"
 
 		[params.navigation.links]
 			about     = "About"
@@ -30,8 +30,17 @@ googleAnalytics = "UA-122802676-1"
 	# About section
 	[params.about]
 		headline    = "About me"
-		description = "エンジニアとしてインフラ周りの勉強をする日々。 [はてなブログ](//tsts.hatenablog.com/)"
-
+		description = """Web系企業のエンジニアとして主にインフラ周りの勉強中。  \n\
+		  \n\
+		[はてなブログ](//tsts.hatenablog.com/)  \n\
+		[Github](https://github.com/tshohe)  \n\
+		[Qiita](https://qiita.com/tshohe)  \n\
+		  \n\
+		Interest:   \n\
+		Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
+		Middleware: Elastic Stack, PostgreSQL, Nginx  \n\
+		Others: Ansible, Terraform, Container tech (based on Docker)  \n\
+		"""
 
 	# Service section
 	[params.services]
