@@ -6,11 +6,12 @@ client: None
 clientLink: "#"
 category: Development
 description: |
-  The home assistant robot in my house.
+  我が家のホームアシスタントロボット。
+  [en]he home assistant robot in my house.
 
   Features:
 
-    - Controll TV using voice.
+    - 声でTVの操作をする。[en]Controll TV using voice.
       - or webapp
 
       ![contoller](img/berikoma/home_controller.png)
