@@ -24,6 +24,7 @@ jobs:
             cp -rp public/* tshohe.github.io/
             cd tshohe.github.io
             git diff
+            git remote set-url origin git@github.com:tshohe/tshohe.github.io.git
             git add .
             git commit -m "publish"
             git push origin master
