@@ -1,4 +1,4 @@
-baseURL = "https://tsts.work"
+baseURL = "https://tsts.dev"
 languageCode = "jp-ja"
 title = "tshohe's website tsts"
 theme = "hugo-creative-theme"
