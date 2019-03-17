@@ -17,7 +17,7 @@ jobs:
 
   deploy:
     <<: *defaults
-    working_directory: ~/hugo
+    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - restore_cache:
           key: hugo-cache
