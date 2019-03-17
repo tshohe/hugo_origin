@@ -11,7 +11,7 @@ googleAnalytics = "UA-122802676-1"
 
 	# Navigation
 	[params.navigation]
-		brand = "TSTS WORK"
+		brand = "TSTS"
 
 		[params.navigation.links]
 			about     = "About"
@@ -36,7 +36,7 @@ googleAnalytics = "UA-122802676-1"
 		[Github](https://github.com/tshohe)  \n\
 		[Qiita](https://qiita.com/tshohe)  \n\
 		  \n\
-		Interest:   \n\
+		Interests:   \n\
 		Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
 		Middleware: Elastic Stack, PostgreSQL, Nginx  \n\
 		Others: Ansible, Terraform, Container tech (based on Docker)  \n\
@@ -51,11 +51,11 @@ googleAnalytics = "UA-122802676-1"
             title = "Memorizer"
             description = "React勉強目的の単純な暗記カードアプリ。作りかけ感満載ですが、暇を見つけて勉強しながら機能拡充していく予定です。  [紹介ページ](/memorizer/lp.html)"
 
-#        [[params.services.list]]
-#            icon = "fa-diamond"
-#            title = "Sturdy Templates"
-#            description = "Our templates are updated regularly so they don't break."
-#
+        [[params.services.list]]
+            icon = "fa-book"
+            title = "Productdiffer（仮）"
+            description = "製品比較選定ツール。作成中。"
+
 #        [[params.services.list]]
 #			icon = "fa-paper-plane"
 #			title = "Ready to Ship"

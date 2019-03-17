@@ -1,31 +1,8 @@
 modalID: 3
-title: Berikoma
-date: 2016-11-5
-img: berikoma.jpg
+title: Exploded Surume
+date: 2018-07-22
+img: exploded_surume.jpg
 client: None
 clientLink: "#"
 category: Development
-description: |
-  我が家のホームアシスタントロボット。
-  [en]he home assistant robot in my house.
-
-  Features:
-
-    - 声でTVの操作をする。[en]Controll TV using voice.
-      - or webapp
-
-      ![contoller](img/berikoma/home_controller.png)
-
-    - Move freely using HTTP request from webapp.
-    - Wakeup PC (Wake-on-LAN) (WIP)
-
-  Consist of:
-
-    - Raspberry Pi
-    - TAMIYA's parts
-    - ANKER's battery
-    - Logicool's camera
-    - Infrared sender/receiver
-    - SG90 * 2
-
-      <video src="img/berikoma/berikoma_speak.mp4" controls width="600"></video>
+description: This made by heating in a microwave(900W) for 40 seconds. Very crispy and tasty.
