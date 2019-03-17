@@ -1,22 +1,19 @@
 defaults: &defaults
   docker:
-      - image: jojomi/hugo:latest
+      - image: circleci/golang:1.9
 
 version: 2
 jobs:
   build:
     <<: *defaults
-    working_directory: ~/hugo
+    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
       - run:
           command: |
-            rm -rf public/*
-            hugo
-      - save_cache:
-          key: hugo-cache
-          paths:
-            - ~/hugo
+             go get -v github.com/spf13/hugo
+             git config --global user.email "takahashi1364@gmail.com"
+             git config --global user.name "tshohe"
 
   deploy:
     <<: *defaults
@@ -30,9 +27,6 @@ jobs:
              cp -rp public/* tshohe.github.io/
              cd tshohe.github.io
              git diff
-             git remote set-url origin git@github.com:tshohe/tshohe.github.io.git
-             git config --global user.email "takahashi1364@gmail.com"
-             git config --global user.name "tshohe"
              git add .
              git commit -m "publish"
              git push origin master
