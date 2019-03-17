@@ -4,44 +4,35 @@ defaults: &defaults
 
 version: 2
 jobs:
-  build:
+  build_and_deploy:
     <<: *defaults
     working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
       - run:
-          command: |
-             go get -v github.com/spf13/hugo
-             git config --global user.email "takahashi1364@gmail.com"
-             git config --global user.name "tshohe"
+         name: install
+         command: |
+            go get -v github.com/spf13/hugo
+            git config --global user.email "takahashi1364@gmail.com"
+            git config --global user.name "tshohe"
 
-  deploy:
-    <<: *defaults
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
-    steps:
-      - restore_cache:
-          key: hugo-cache
       - run:
-           command: | 
-             git clone https://github.com/tshohe/tshohe.github.io.git
-             cp -rp public/* tshohe.github.io/
-             cd tshohe.github.io
-             git diff
-             git add .
-             git commit -m "publish"
-             git push origin master
+          name: build and deploy
+          command: | 
+            hugo
+            git clone https://github.com/tshohe/tshohe.github.io.git
+            cp -rp public/* tshohe.github.io/
+            cd tshohe.github.io
+            git diff
+            git add .
+            git commit -m "publish"
+            git push origin master
 
 workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - build:
+      - build_and_deploy:
           filters:
             branches:
               only: master
-      - deploy:
-          filters:
-            branches:
-              only: master
-          requires:
-            - build
