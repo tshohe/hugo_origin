@@ -12,6 +12,9 @@ jobs:
       - run:
           command: |
             rm -rf public/*
+            cd public
+            git clone https://github.com/tshohe/tshohe.github.io.git
+            cd ..
             hugo
       - save_cache:
           key: hugo-cache
@@ -26,6 +29,7 @@ jobs:
           key: hugo-cache
       - run:
            command: | 
+             git remote set-url origin git@github.com:tshohe/tshohe.github.io.git
              git add .
              git commit -m "publish"
              git push origin master

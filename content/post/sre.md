@@ -1,8 +1,13 @@
----
-title: "Sre"
-date: 2018-07-27T23:39:32+09:00
-draft: true
----
++++
+categories = ["", ""]
+date = ""
+description = ""
+draft = true
+image = ""
+tags = ["", ""]
+title = "SREとは"
+author = ""
++++
 
 # SRE memo
 
