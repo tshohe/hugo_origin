@@ -14,3 +14,7 @@ body {
   padding: 10px;
   background-color: #eee;
 }
+
+.bg-primary {
+    background-color: #8fbc8f;
+}
