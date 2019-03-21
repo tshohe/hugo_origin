@@ -20,7 +20,6 @@ jobs:
             git clone https://github.com/tshohe/tshohe.github.io.git
             cp -rp public/* tshohe.github.io/
             cd tshohe.github.io
-            git diff
             git add .
             git commit -m "[ci skip] publish"
             git push origin master
