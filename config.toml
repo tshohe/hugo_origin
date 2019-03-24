@@ -53,7 +53,7 @@ googleAnalytics = "UA-122802676-1"
 
         [[params.services.list]]
             icon = "fa-book"
-            title = "Productdiffer"
+            title = "Productiff"
             description = "製品比較選定ツール。作成中。"
 
 #        [[params.services.list]]
