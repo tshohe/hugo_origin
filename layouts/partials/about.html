@@ -1,0 +1,27 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.about.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.about.headline .Site.Params.about.description }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.about.description }}
+                    <p class="text-faded">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .Site.Params.about.buttonText }}
+                    <a href="#" class="btn btn-default btn-xl">{{ . }}</a>
+                {{ end }}
+                <a href="https://twitter.com/tshohe1?ref_src=twsrc%5Etfw"
+                  class="twitter-follow-button" data-show-count="false"
+                >
+                  Follow @tshohe1
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
+</section>
