@@ -18,7 +18,7 @@ jobs:
           command: | 
             hugo
             git clone https://github.com/tshohe/tshohe.github.io.git
-            cp -rp public/* tshohe.github.io/
+            cp -a public/* tshohe.github.io/
             cd tshohe.github.io
             git add .
             git commit -m "[ci skip] publish"
