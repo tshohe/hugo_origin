@@ -2,15 +2,17 @@
 categories = ["", ""]
 date = ""
 description = ""
-draft = true
+draft = false
 image = ""
 tags = ["", ""]
-title = "SREとは"
+title = "SRE概要"
 author = ""
 +++
 
-# SRE memo
+# SRE概要
+
+https://github.com/tshohe/awsome-sre-jp/blob/master/asess-sre-level.md
 
 ## Reference
 
-http://landing.google.com/sre/book.html
+- http://landing.google.com/sre/book.html
