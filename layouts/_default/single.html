@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+<!--    <body id="page-top">-->
+    <body>
+        <div class="container main-content">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ .Title }}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="text-center">
+                <a href="/">Back to Home</a>
+            </div>
+        </div>
+
+        {{ partial "js.html" . }}
+
+        {{ partial "footer.html" . }}
+
+        {{ template "_internal/google_analytics.html" . }}
+    </body>
+</html>
+

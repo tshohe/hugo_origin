@@ -8,6 +8,7 @@ googleAnalytics = "UA-122802676-1"
 	name = "tshohe"
 	description = "IT Engineer (SRE)"
 	favicon = "favicon.ico"
+	customCSS = ["/css/custom.css"]
 
 	# Navigation
 	[params.navigation]
