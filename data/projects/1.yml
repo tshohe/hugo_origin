@@ -25,6 +25,6 @@ description: |
     - Logicool's camera
     - Infrared sender/receiver
     - SG90
-    - Send a note on Slack by voice (IFTTT)
+    - Send a note on Slack by voice
 
-      <video src="img/berikoma/berikoma_speak.mp4" controls width="600"></video>
+    <video src="img/berikoma/berikoma_speak.mp4" controls width="600"></video>
