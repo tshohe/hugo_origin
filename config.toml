@@ -39,8 +39,12 @@ googleAnalytics = "UA-122802676-1"
 		  \n\
 		Interests:   \n\
 		Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
-		Middleware: Elastic Stack, PostgreSQL, Nginx  \n\
-		Others: Ansible, Terraform, Fluentd, Grafana, Container tech (based on Docker)  \n\
+		Database: PostgreSQL
+		Web: Nginx  \n\
+		Serverless: Lambda, FaaS
+		Monitoring: Elastic Stack, Prometheus, Grafana
+		IaC: Ansible, Terraform
+		Others: Fluentd, Container tech (based on Docker)  \n\
 		"""
 
 	# Service section
