@@ -41,8 +41,8 @@ googleAnalytics = "UA-122802676-1"
 		Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
 		Database: PostgreSQL
 		Web: Nginx  \n\
-		Serverless: Lambda, FaaS
-		Monitoring: Elastic Stack, Prometheus, Grafana
+		Serverless: Lambda, Serverless Framework  \n\
+		Monitoring: Elastic Stack, Prometheus, Grafana  \n\
 		IaC: Ansible, Terraform
 		Others: Fluentd, Container tech (based on Docker)  \n\
 		"""
