@@ -10,7 +10,7 @@
         </div>
         <div class="row">
             {{ range .Site.Data.projects }}
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-3 col-sm-6">
                     <a href="#portfolioModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/{{ .img }}" class="img-responsive" alt="">
                         {{ if and .category .title }}

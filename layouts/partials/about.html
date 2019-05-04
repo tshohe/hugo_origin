@@ -18,7 +18,10 @@
                 <a href="https://twitter.com/tshohe1?ref_src=twsrc%5Etfw"
                   class="twitter-follow-button" data-show-count="false"
                 >
-                  Follow @tshohe1
+                  Follow @{{ .Site.Params.about.twitter_id }}
+                </a>
+                <a href="https://github.com/{{ .Site.Params.about.github_id }}" target="_blank">
+                    <i class="fa fa-github-square" style="color: black;font-size:2em"></i>
                 </a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>

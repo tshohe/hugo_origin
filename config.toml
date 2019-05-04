@@ -5,51 +5,52 @@ theme = "hugo-creative-theme"
 googleAnalytics = "UA-122802676-1"
 
 [params]
-	name = "tshohe"
-	description = "IT Engineer (SRE)"
-	favicon = "favicon.ico"
-	customCSS = ["/css/custom.css"]
+  name = "tshohe"
+  description = "IT Engineer (SRE)"
+  favicon = "favicon.ico"
+  customCSS = ["/css/custom.css"]
 
-	# Navigation
-	[params.navigation]
-		brand = "tsts.dev"
+  # Navigation
+  [params.navigation]
+    brand = "tsts.dev"
 
-		[params.navigation.links]
-			about     = "About"
-			services  = "Services"
-			portfolio = "Portfolio"
-			contact   = "Contact"
-
-
-	# Hero section
-	[params.hero]
-		slogan     = "T S T S"
-		subtitle   = "Introduction of blog, service and portfolio."
-		buttonText = "Find out more"
+    [params.navigation.links]
+      about     = "About"
+      services  = "Services"
+      portfolio = "Portfolio"
+      contact   = "Contact"
 
 
-	# About section
-	[params.about]
-		headline    = "About me"
-		description = """Web系企業のエンジニアとして主にインフラ周りの勉強中。  \n\
-		  \n\
-		[はてなブログ](//tsts.hatenablog.com/)  \n\
-		[Github](https://github.com/tshohe)  \n\
-		[Qiita](https://qiita.com/tshohe)  \n\
-		  \n\
-		Interests:   \n\
-		Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
-		Database: PostgreSQL
-		Web: Nginx  \n\
-		Serverless: Lambda, Serverless Framework  \n\
-		Monitoring: Elastic Stack, Prometheus, Grafana  \n\
-		IaC: Ansible, Terraform
-		Others: Fluentd, Container tech (based on Docker)  \n\
-		"""
+  # Hero section
+  [params.hero]
+    slogan     = "T S T S"
+    subtitle   = "Introduction of blog, service and portfolio."
+    buttonText = "Find out more"
 
-	# Service section
-	[params.services]
-		headline = "My Services"
+
+  # About section
+  [params.about]
+    headline    = "About me"
+		twitter_id  = "tshohe1"
+		github_id   = "tshohe"
+    description = """Web系企業のエンジニアとして主にインフラ周りの勉強中。  \n\
+      \n\
+    [はてなブログ](//tsts.hatenablog.com/)  \n\
+    [Qiita](https://qiita.com/tshohe)  \n\
+      \n\
+    Interests:   \n\
+    Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
+    Database: PostgreSQL
+    Web: Nginx  \n\
+    Serverless: Lambda, Serverless Framework  \n\
+    Monitoring: Elastic Stack, Prometheus, Grafana  \n\
+    IaC: Ansible, Terraform
+    Others: Fluentd, Container tech (based on Docker)  \n\
+    """
+
+  # Service section
+  [params.services]
+    headline = "My Services"
 
         [[params.services.list]]
             icon = "fa-cloud"
@@ -62,29 +63,28 @@ googleAnalytics = "UA-122802676-1"
             description = "製品比較選定ツール。作成中。"
 
     # Portfolio modals
-	[params.portfolio.modal]
+  [params.portfolio.modal]
         client = "Client"
         date = "Date"
         category = "Category"
         buttonText = "Close"
 
     # Aside section
-#	[params.aside]
-#		headline = "Get the Creative Theme for Hugo"
+#  [params.aside]
+#    headline = "Get the Creative Theme for Hugo"
 #
-#		[params.aside.button]
-#			text = "Download now"
-#			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+#    [params.aside.button]
+#      text = "Download now"
+#      link = "//github.com/digitalcraftsman/hugo-creative-theme"
 
-	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "いいお仕事がありましたらご連絡ください。"
-		#phone = "123-456-6789"
-		email = "tshohe01@gmail.com"
+  # Contact section
+  [params.contact]
+    headline = "Let's Get In Touch!"
+    description = "いいお仕事がありましたらご連絡ください。"
+    email = "tshohe01@gmail.com"
 
-	# Google Maps section
-	# [params.location]
-	# 	latitude  = "34.007850"
-	# 	longitude = "-118.499305"
-	# 	maps_api_key = ""
+  # Google Maps section
+  # [params.location]
+  #   latitude  = "34.007850"
+  #   longitude = "-118.499305"
+  #   maps_api_key = ""
