@@ -14,8 +14,8 @@ description: |
 
       ![contoller](img/berikoma/home_controller.png)
 
-    - Move freely using HTTP request from webapp.
-    - Wakeup PC (Wake-on-LAN) (WIP)
+    #- Move freely using HTTP request from webapp.
+    #- Wakeup PC (Wake-on-LAN) (WIP)
 
   Consist of:
 
