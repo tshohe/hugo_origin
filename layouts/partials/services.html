@@ -15,8 +15,8 @@
             {{ range .Site.Params.services.list }}
             <div class="col-lg-6 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x {{ .icon }} wow bounceIn text-primary"></i>
-                    <h3>{{ .title }}</h3>
+                    <a href="{{ .link }}" target="_blank"><i class="fa fa-4x {{ .icon }} wow bounceIn text-primary"></i></a>
+                    <h3>{{ .title | markdownify}}</h3>
                     {{ with .description | markdownify }}
                         <p class="text-muted">{{ . }}</p>
                     {{ end }}
