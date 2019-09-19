@@ -8,15 +8,6 @@ category: Development
 description: |
   我が家のホームアシスタントロボット。
 
-  Features:
-
-    - 声 or ブラウザでTVの操作
-
-      ![contoller](img/berikoma/home_controller.png)
-
-    #- Move freely using HTTP request from webapp.
-    #- Wakeup PC (Wake-on-LAN) (WIP)
-
   Consist of:
 
     - Raspberry Pi
@@ -26,5 +17,17 @@ description: |
     - Infrared sender/receiver
     - SG90
     - Send a note on Slack by voice
+    - Raspbian
 
-    <video src="img/berikoma/berikoma_speak.mp4" controls width="600"></video>
+  Features:
+
+    - 音声操作
+     - Google Home -> Slack -> Slack bot -> これ
+
+    - ブラウザでTVの操作
+
+    <img src="img/berikoma/home_controller.png" width="50%"></img>
+
+    - 画像認識
+
+    <video src="img/berikoma/berikoma_speak.mp4" controls width="80%"></video>

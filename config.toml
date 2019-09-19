@@ -38,13 +38,13 @@ googleAnalytics = "UA-122802676-1"
     [はてなブログ](//tsts.hatenablog.com/)  \n\
     [Qiita](https://qiita.com/tshohe)  \n\
       \n\
-    Interests:   \n\
+    ### Interests:   \n\
     Language: Python(Django, Flask), Java(Spring Boot), golang, JavaScript(React.js)  \n\
     Database: PostgreSQL
     Web: Nginx  \n\
     Serverless: Lambda, Serverless Framework  \n\
     Monitoring: Elastic Stack, Prometheus, Grafana  \n\
-    IaC: Ansible, Terraform
+    IaC: Ansible, Terraform  \n\
     Others: Fluentd, Container tech (based on Docker)  \n\
     """
 
@@ -82,7 +82,7 @@ googleAnalytics = "UA-122802676-1"
   # Contact section
   [params.contact]
     headline = "Let's Get In Touch!"
-    description = "いいお仕事がありましたらご連絡ください。"
+    description = "Please contact me if you get something worthwhile."
     email = "tshohe01@gmail.com"
 
   # Google Maps section
