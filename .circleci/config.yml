@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.12.0
+      - image: circleci/golang:1.14
     working_directory: ~/hugo
     steps:
       - checkout
       - run:
          name: install
          command: |
-            go get -v github.com/spf13/hugo
+            go get -v github.com/gohugoio/hugo
             git config --global user.email "takahashi1364@gmail.com"
             git config --global user.name "tshohe"
 
