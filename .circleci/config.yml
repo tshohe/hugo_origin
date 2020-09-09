@@ -9,18 +9,14 @@ jobs:
       - run:
          name: install
          command: |
-            git clone https://github.com/gohugoio/hugo
-            mkdir -p src/github.com/gohugoio
-            ln -sf $(pwd) src/github.com/gohugoio/hugo
-            go get
-            go build -o hugo main.go
+            sudo apt-get install hugo
             git config --global user.email "takahashi1364@gmail.com"
             git config --global user.name "tshohe"
 
       - run:
           name: build and deploy
           command: | 
-            ./hugo
+            hugo
             git clone https://github.com/tshohe/tshohe.github.io.git
             cp -af public/* tshohe.github.io/
             cd tshohe.github.io
