@@ -15,7 +15,7 @@ jobs:
 
       - run:
           name: build and deploy
-          command: | 
+          command: |
             hugo
             git clone https://github.com/tshohe/tshohe.github.io.git
             cp -af public/* tshohe.github.io/
